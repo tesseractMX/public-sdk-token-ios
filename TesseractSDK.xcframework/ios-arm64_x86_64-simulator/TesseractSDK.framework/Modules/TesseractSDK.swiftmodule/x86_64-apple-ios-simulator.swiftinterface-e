@@ -1,0 +1,1207 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TesseractSDK
+import Darwin
+import Foundation
+import Swift
+import SystemConfiguration
+@_exported import TesseractSDK
+import UIKit
+import _Concurrency
+extension TesseractSDK.NKRkndJl7PYfnirEA3l9Ma7PcSyYTWeO {
+  convenience public init(key: Swift.String) throws
+  convenience public init(key: Swift.String, iv: Swift.String) throws
+}
+public protocol ICFv9Wcd9WnzbD2kPY025E9gU2lh5B9O {
+  static var Ghh3EmA6FAI9pLTfBNAEEUIfJFthnU3w: Swift.Int { get }
+  static var Mcwj6icmumkJ6neBHF0xivIIBBA7w1gw: Swift.Range<Swift.Int> { get }
+}
+public typealias Limbs = [Swift.UInt64]
+public typealias Limb = Swift.UInt64
+public typealias Digits = [Swift.UInt64]
+public typealias Digit = Swift.UInt64
+precedencegroup ExponentiationPrecedence {
+  associativity: left
+  higherThan: MultiplicationPrecedence
+  lowerThan: BitwiseShiftPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+public struct yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7 : Swift.SignedNumeric, Swift.BinaryInteger, Swift.ExpressibleByFloatLiteral {
+  public typealias Magnitude = Swift.UInt64
+  public var magnitude: Swift.UInt64 {
+    get
+  }
+  public typealias Words = [Swift.UInt]
+  public var words: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7.Words {
+    get
+  }
+  public var size: Swift.Int {
+    get
+  }
+  public var sizeDescription: Swift.String {
+    get
+  }
+  public init(_ z: Swift.Int)
+  public init(_ n: Swift.UInt)
+  public init?(_ str: Swift.String)
+  public init?(_ number: Swift.String, radix: Swift.Int)
+  public init?(prefixedNumber number: Swift.String)
+  public init(floatLiteral value: Swift.Double)
+  public init(integerLiteral value: Swift.Int)
+  public init?<T>(exactly source: T) where T : Swift.BinaryInteger
+  public init<T>(_ source: T) where T : Swift.BinaryFloatingPoint
+  public init<T>(_ source: T) where T : Swift.BinaryInteger
+  public init<T>(clamping source: T) where T : Swift.BinaryInteger
+  public init?<T>(exactly source: T) where T : Swift.BinaryFloatingPoint
+  public init<T>(truncatingIfNeeded source: T) where T : Swift.BinaryInteger
+  public var description: Swift.String {
+    get
+  }
+  public func ichJS5BbYiWbiglVkQjQLegm96jfOmv5(radix: Swift.Int) -> Swift.String
+  public var hashValue: Swift.Int {
+    get
+  }
+  public static var isSigned: Swift.Bool {
+    get
+  }
+  public var bitWidth: Swift.Int {
+    get
+  }
+  public func signum() -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public var trailingZeroBitCount: Swift.Int {
+    get
+  }
+  public static func << <T>(lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: T) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7 where T : Swift.BinaryInteger
+  public static func <<= <T>(lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: T) where T : Swift.BinaryInteger
+  public static func >> <T>(lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: T) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7 where T : Swift.BinaryInteger
+  public static func >>= <T>(lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: T) where T : Swift.BinaryInteger
+  public static func & (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func &= (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public static func | (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func |= (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public static func ^ (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func ^= (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  prefix public static func ~ (x: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  prefix public static func + (x: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func += (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public static func + (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public mutating func negate()
+  prefix public static func - (n: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func - (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func -= (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public static func * (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func *= (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public func quotientAndRemainder(dividingBy rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> (quotient: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, remainder: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public static func / (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func /= (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public static func % (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func %= (lhs: inout TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public static func == (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> Swift.Bool
+  public static func < (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> Swift.Bool
+  public static func > (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> Swift.Bool
+  public static func <= (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> Swift.Bool
+  public static func >= (lhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, rhs: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias FloatLiteralType = Swift.Double
+  public typealias IntegerLiteralType = Swift.Int
+  public typealias Stride = Swift.Int
+}
+@_hasMissingDesignatedInitializers public class xYdF1xLe74EGIKUHBO96tDGflmLxny2a {
+  @objc deinit
+}
+public struct SuRk7R1AJnxOyBaikvaph9sARvxLZlxI : Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.CustomStringConvertible, Swift.SignedNumeric, Swift.Comparable, Swift.Hashable {
+  public typealias Magnitude = Swift.Double
+  public var magnitude: Swift.Double
+  public init?<T>(exactly source: T) where T : Swift.BinaryInteger
+  public init(sign: Swift.Bool, numerator: TesseractSDK.Limbs, denominator: TesseractSDK.Limbs)
+  public init(_ numerator: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7, over denominator: TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7)
+  public init(_ numerator: Swift.Int, over denominator: Swift.Int)
+  public init?(_ numerator: Swift.String, over denominator: Swift.String)
+  public init?(_ nStr: Swift.String)
+  public init?(_ nStr: Swift.String, radix: Swift.Int)
+  public init(_ z: Swift.Int)
+  public init(_ d: Swift.Double)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public var description: Swift.String {
+    get
+  }
+  public var E7fQncwdjEpXlD4ukTBZ6NkOmAjwGysT: Swift.String {
+    get
+  }
+  public static var u55s7HMmLRuZaV60wxSkRzQGOmPa6dhs: Swift.Int {
+    get
+    set
+  }
+  public var u55s7HMmLRuZaV60wxSkRzQGOmPa6dhs: Swift.Int {
+    get
+    set
+  }
+  public var HAJ90m9qIq74TsNJBCuXrlIx9vz6w40L: Swift.String {
+    get
+  }
+  public func zhFsd3DRILjVBaapW544CbyLvSXjMm6T(precisionAfterDecimalPoint precision: Swift.Int, rounded: Swift.Bool = true) -> Swift.String
+  public var hashValue: Swift.Int {
+    get
+  }
+  public var w9qBWOeWT9cSirBmHs9blwh1R0mKHXq3: Swift.Int {
+    get
+  }
+  public var MNkcrAhxw3EupQ1LKtOJCRiyY1ZYIy8w: Swift.String {
+    get
+  }
+  public func ry4YQJbUCPipjcrT0tf7S8Csh0pQrb6f() -> (sign: Swift.Bool, numerator: [Swift.UInt64], denominator: [Swift.UInt64])
+  public func ccQPA0z2HnI1Qt8yiKpTmOnv2EdeGGt5() -> Swift.Bool
+  public func Jaq9WWDZgly8QknUFiZuNPWVgnUL9KC6() -> Swift.Bool
+  public func GZavuIlVuwdrjLbEs5mMJRduYbhnEkJR() -> Swift.Bool
+  public mutating func kAEidqAN7ZGLJFpgGzxDKJYy6vntKYxO()
+  public func FHfRs5k3cOAIzar36zue50ZWUlOXXc3T() -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+  public static func + (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func + (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func + (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func += (lhs: inout TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI)
+  public static func += (lhs: inout TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double)
+  public mutating func negate()
+  prefix public static func - (n: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func - (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func - (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func - (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func -= (lhs: inout TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI)
+  public static func -= (lhs: inout TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double)
+  public static func * (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func * (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func * (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func *= (lhs: inout TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI)
+  public static func *= (lhs: inout TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double)
+  public static func ** (base: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, exponent: Swift.Int) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func / (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func / (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func / (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+  public static func pbJkwYXldMdcXM3m97KeVkVCJj23YFEH(_ lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, _ rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, epsilon: Swift.Double = 0.00001) -> Swift.Bool
+  public static func == (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func == (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> Swift.Bool
+  public static func == (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func != (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func != (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> Swift.Bool
+  public static func != (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func < (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func < (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> Swift.Bool
+  public static func < (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func > (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func > (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> Swift.Bool
+  public static func > (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func <= (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func <= (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> Swift.Bool
+  public static func <= (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func >= (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public static func >= (lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, rhs: Swift.Double) -> Swift.Bool
+  public static func >= (lhs: Swift.Double, rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias FloatLiteralType = Swift.Double
+  public typealias IntegerLiteralType = Swift.Int
+}
+public func rG98o4iqTuEg75wDibtOLv2VPrOn79Ft(_ x: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+public func xeE0ARIe3uQaR5xSkOZUUoYmQcRxCjyF(_ base: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+public func pmLxNIJmaBQ0UkrHdLDpmPW3q8BbjRCz(_ base: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.yzGIc43kWb77BEFTnYfzI9BXuVZ98xB7
+public func rre7G0MEHMM3Tikl9nPAiIiPhK4daAlV(_ base: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, _ exp: Swift.Int) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+public func tPhHhkX9Ga9egDUmYX3YEm5SOuKB4DKg(_ lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, _ rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+public func JSzYttYgq3pFDgLrHNXdAMh6mAGREaUa(_ lhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI, _ rhs: TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI) -> TesseractSDK.SuRk7R1AJnxOyBaikvaph9sARvxLZlxI
+public struct fkwiqyYiUpXw3ILmrhAe8b8CoAzxyCMP : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    public static func == (a: TesseractSDK.fkwiqyYiUpXw3ILmrhAe8b8CoAzxyCMP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.fkwiqyYiUpXw3ILmrhAe8b8CoAzxyCMP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public init(iv: Swift.Array<Swift.UInt8>)
+  public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+public struct UEJjw5d29hvjH8AyLQH5ifeNkHnC9UCs {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    public static func == (a: TesseractSDK.UEJjw5d29hvjH8AyLQH5ifeNkHnC9UCs.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.UEJjw5d29hvjH8AyLQH5ifeNkHnC9UCs.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public init(iv: Swift.Array<Swift.UInt8>, counter: Swift.Int = 0)
+  public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+public struct amMKsUVBzW7rtQ3ukm65QQ4orcprJkUA {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    case OS6ULRT5YVdqcsQN1lSagRE1BwRC2pLM
+    case HelFL5fk3Nf8gwfFXd1XC1iPtyHivzyR
+    public static func == (a: TesseractSDK.amMKsUVBzW7rtQ3ukm65QQ4orcprJkUA.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.amMKsUVBzW7rtQ3ukm65QQ4orcprJkUA.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public var YBI6OzVlN12uOwKp3XMFKsb2nxpcKloG: Swift.Array<Swift.UInt8>?
+  public init(iv: Swift.Array<Swift.UInt8>, tagLength: Swift.Int, messageLength: Swift.Int, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil)
+  public init(iv: Swift.Array<Swift.UInt8>, tagLength: Swift.Int, messageLength: Swift.Int, authenticationTag: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil)
+  public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+public class IZU03N5nWdDkQk3Y5HiyaXI67NbGrL2Q : TesseractSDK.BhKmsulF5YzCdB4Qzopmosb9gYLQnR6w {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case DUNsPQm9CxBOCV7BXi0hJ5f3xY4MA8Zt
+    public static func == (a: TesseractSDK.IZU03N5nWdDkQk3Y5HiyaXI67NbGrL2Q.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.IZU03N5nWdDkQk3Y5HiyaXI67NbGrL2Q.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(key: Swift.Array<Swift.UInt8>) throws
+  public func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  @objc deinit
+}
+final public class jXrTiMYzVzx5BwfYwhN95FOykwK9fNzv {
+  public init(password: Swift.Array<Swift.UInt8>, salt: Swift.Array<Swift.UInt8>, dkLen: Swift.Int, N: Swift.Int, r: Swift.Int, p: Swift.Int) throws
+  final public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb() throws -> [Swift.UInt8]
+  @objc deinit
+}
+open class iocYR358Fi1rl2EnKumeYTf6gjbS7eQ6 : TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV {
+  open var FmNdvL3NHJ67uODS0KPMmRlYZLQ0JToi: TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV {
+    get
+  }
+  final public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.DnNfHFsbXcccelZjsB1gOBERyxQbJbbC
+  public init(root: TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV? = nil, options: TesseractSDK.DnNfHFsbXcccelZjsB1gOBERyxQbJbbC = DnNfHFsbXcccelZjsB1gOBERyxQbJbbC())
+  convenience public init(xml: Foundation.Data, options: TesseractSDK.DnNfHFsbXcccelZjsB1gOBERyxQbJbbC = DnNfHFsbXcccelZjsB1gOBERyxQbJbbC()) throws
+  convenience public init(xml: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8, options: TesseractSDK.DnNfHFsbXcccelZjsB1gOBERyxQbJbbC = DnNfHFsbXcccelZjsB1gOBERyxQbJbbC()) throws
+  open func pFXrflo0tlKuqD3xsH8FcZd6t5O5cacp(_ data: Foundation.Data) throws
+  override open var rXSiLXtWNJJxFDRalwTJBscHOpCmc4JA: Swift.String {
+    get
+  }
+  @objc deinit
+}
+final public class nH4ZUOAeZwriht8asIBiNzafg50a0sp4 : TesseractSDK.BhKmsulF5YzCdB4Qzopmosb9gYLQnR6w {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case PXiIcbHc83Dz2LivJq7WJknzksJPLwId
+    case Ry967RjPvpRxEU5UX2wnFnaI63bUoOG1
+    public static func == (a: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum QMGPuzjswMeAUOiFcWNDnNbM4GodKldy {
+    case DjRjx0kUCSuyiyuqmkskQPJWhQ4RIUsS, CJCiMMBeznvfU1AlZM38n8La2lKxSkZR, DKsAgA6kRNXlim48QpTZco3yYHYwzXoE, Fj0zfxn4cXHklIdYPX8zZrYG13psz6WT, jrghJWtJATAQCFHV1vRqPLDsXDO7yso5
+    public static func == (a: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy, b: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(key: Swift.Array<Swift.UInt8>, variant: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy = .jrghJWtJATAQCFHV1vRqPLDsXDO7yso5)
+  final public func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  @objc deinit
+}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD {
+  public struct aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI {
+    public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+      case Ry967RjPvpRxEU5UX2wnFnaI63bUoOG1
+      case LkBDua57c6OwWMFrlHyvBBcDqCPGHDV8
+      public static func == (a: TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public enum QMGPuzjswMeAUOiFcWNDnNbM4GodKldy {
+      case jrghJWtJATAQCFHV1vRqPLDsXDO7yso5, DjRjx0kUCSuyiyuqmkskQPJWhQ4RIUsS
+      public static func == (a: TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy, b: TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public init(password: Swift.Array<Swift.UInt8>, salt: Swift.Array<Swift.UInt8>, variant: TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy = .DjRjx0kUCSuyiyuqmkskQPJWhQ4RIUsS, iterations: Swift.Int = 4096, keyLength: Swift.Int? = nil) throws
+    public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb() -> Swift.Array<Swift.UInt8>
+  }
+}
+@available(*, renamed: "Digest")
+public typealias Hash = TesseractSDK.x6gjdsHW9FZSAd6yvr9wt61qyPFo3MDj
+public struct x6gjdsHW9FZSAd6yvr9wt61qyPFo3MDj {
+  public static func jrghJWtJATAQCFHV1vRqPLDsXDO7yso5(_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  public static func DjRjx0kUCSuyiyuqmkskQPJWhQ4RIUsS(_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  public static func ejJ4yPfAJIjDyKgV7P1ZWkRG2Tos0krQ(_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  public static func CJCiMMBeznvfU1AlZM38n8La2lKxSkZR(_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  public static func DKsAgA6kRNXlim48QpTZco3yYHYwzXoE(_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  public static func Fj0zfxn4cXHklIdYPX8zZrYG13psz6WT(_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  public static func b7BPQ63REH6iKShh6UocvKJObb86oFD1(_ bytes: Swift.Array<Swift.UInt8>, variant: TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> Swift.Array<Swift.UInt8>
+  public static func NdJ0LMw3I6fkx4nCdCnlwiLYSodJqyFc(_ bytes: Swift.Array<Swift.UInt8>, variant: TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> Swift.Array<Swift.UInt8>
+}
+@_inheritsConvenienceInitializers final public class c9Io6sp2E5gWcgPmp5PLHrZotJm0FJMX : TesseractSDK.IZU03N5nWdDkQk3Y5HiyaXI67NbGrL2Q {
+  override final public func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  override public init(key: Swift.Array<Swift.UInt8>) throws
+  @objc deinit
+}
+extension Swift.Array where Element == Swift.UInt8 {
+  public func KDpEeMxFsn3LYbrHt3aHdBwO92or2szc() -> Swift.String?
+  public init(base64: Swift.String)
+}
+public enum GvngZ2sobGEjwYPVqcjLNu6z6tLL095s : Swift.Error {
+  case Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh
+  case suBBnPSqIcbiechDeB6TXfRrxqvuXMzB
+  public static func == (a: TesseractSDK.GvngZ2sobGEjwYPVqcjLNu6z6tLL095s, b: TesseractSDK.GvngZ2sobGEjwYPVqcjLNu6z6tLL095s) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S : AnyObject {
+  var jqt7yYAXe4dP0sYJ72lxLaWs6UBKWVnN: Swift.Int { get }
+  func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+}
+extension TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S {
+  public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  public func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+}
+final public class Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case robZRxFu1rlp04wmYpscvrEjgBpK1s44
+    case Oc2rC9LmFkihwVILBqk5GMX2V6tMISCU
+    case S3e1XxfusrIsnRW0HMztS2HUeDP5tUZd
+    public static func == (a: TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Int {
+    case aes128, aes192, aes256
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static let ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int
+  final public let jqt7yYAXe4dP0sYJ72lxLaWs6UBKWVnN: Swift.Int
+  final public let ngNSwChpYo8psHUlGI8kewONiSaFS2ZW: TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy
+  public init(key: Swift.Array<Swift.UInt8>, blockMode: TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi, padding: TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39 = .FBTxkWkKznMjWompJTl1ZLL5IUw0go9u) throws
+  @objc deinit
+}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth : TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S {
+  final public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  final public func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+}
+final public class e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case Oc2rC9LmFkihwVILBqk5GMX2V6tMISCU
+    case vXKeTajWjQwg2p6CxP97zWR4GqfdVZXN
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    case RsFgSeLgv9DyCuyNJPlaiZMC6nDGS6Wy
+    public static func == (a: TesseractSDK.e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static let ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int
+  final public let jqt7yYAXe4dP0sYJ72lxLaWs6UBKWVnN: Swift.Int
+  public init(key: Swift.Array<Swift.UInt8>, blockMode: TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi = fkwiqyYiUpXw3ILmrhAe8b8CoAzxyCMP(iv: Array<UInt8>(repeating: 0, count: e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc.ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv)), padding: TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39) throws
+  @objc deinit
+}
+extension TesseractSDK.e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc : TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S {
+  final public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh<C>(_ bytes: C) throws -> Swift.Array<Swift.UInt8> where C : Swift.Collection, C.Element == Swift.UInt8, C.Index == Swift.Int
+  final public func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB<C>(_ bytes: C) throws -> Swift.Array<Swift.UInt8> where C : Swift.Collection, C.Element == Swift.UInt8, C.Index == Swift.Int
+}
+@_hasMissingDesignatedInitializers public class N5zKM8pMaYCmIw8tAWX27tbdzpNt4I92 {
+  @objc deinit
+}
+public struct y5pUNhF5yR0DpvXf5IpqN8tQe3pviUFw : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    public static func == (a: TesseractSDK.y5pUNhF5yR0DpvXf5IpqN8tQe3pviUFw.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.y5pUNhF5yR0DpvXf5IpqN8tQe3pviUFw.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public init(iv: Swift.Array<Swift.UInt8>)
+  public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+final public class eG4bypcyHdtvAuV2WEdgS6lNzvtcoSMX {
+  public init()
+  final public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb(for bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  @objc deinit
+}
+extension TesseractSDK.eG4bypcyHdtvAuV2WEdgS6lNzvtcoSMX : TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+  final public func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+}
+extension Swift.Array where Element == Swift.UInt8 {
+  public init(hex: Swift.String)
+  public func zYK52CHADZKIBeKNIWm4htrhIFFSxTRO() -> Swift.String
+}
+extension Swift.Array where Element == Swift.UInt8 {
+  @available(*, deprecated)
+  public func aY9jJWRJ8KHwkYsfDqeWQPT8ElC567ac(size chunksize: Swift.Int) -> Swift.Array<Swift.Array<Element>>
+  public func jrghJWtJATAQCFHV1vRqPLDsXDO7yso5() -> [Element]
+  public func DjRjx0kUCSuyiyuqmkskQPJWhQ4RIUsS() -> [Element]
+  public func ejJ4yPfAJIjDyKgV7P1ZWkRG2Tos0krQ() -> [Element]
+  public func CJCiMMBeznvfU1AlZM38n8La2lKxSkZR() -> [Element]
+  public func DKsAgA6kRNXlim48QpTZco3yYHYwzXoE() -> [Element]
+  public func Fj0zfxn4cXHklIdYPX8zZrYG13psz6WT() -> [Element]
+  public func b7BPQ63REH6iKShh6UocvKJObb86oFD1(_ variant: TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> [Element]
+  public func NdJ0LMw3I6fkx4nCdCnlwiLYSodJqyFc(_ variant: TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> [Element]
+  public func eRBesasvsKOQyEgmwcC0V0QS71WhB8Ff(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32
+  public func vgepRna0yRduyAk09UyEMkxzQGNBBqaO(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32
+  public func hpo7koNsjsmJVya73rOYDrrk9MO4ojfU(seed: Swift.UInt16? = nil) -> Swift.UInt16
+  public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> [Element]
+  public func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> [Element]
+  public func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ<A>(with authenticator: A) throws -> [Element] where A : TesseractSDK.BhKmsulF5YzCdB4Qzopmosb9gYLQnR6w
+}
+public struct VSGbSiw9GmEZGpXtzbNqWEKynpdqHRzK : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    public static func == (a: TesseractSDK.VSGbSiw9GmEZGpXtzbNqWEKynpdqHRzK.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.VSGbSiw9GmEZGpXtzbNqWEKynpdqHRzK.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public init(iv: Swift.Array<Swift.UInt8>)
+  public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+public enum ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD {
+}
+final public class yUyFhzP7XK7gTLNRQ1FPpwDwTQRysj8O : TesseractSDK.BhKmsulF5YzCdB4Qzopmosb9gYLQnR6w {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case PXiIcbHc83Dz2LivJq7WJknzksJPLwId
+    public static func == (a: TesseractSDK.yUyFhzP7XK7gTLNRQ1FPpwDwTQRysj8O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.yUyFhzP7XK7gTLNRQ1FPpwDwTQRysj8O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static let ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int
+  public init(key: Swift.Array<Swift.UInt8>)
+  final public func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  @objc deinit
+}
+final public class xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh {
+  public enum QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.RawRepresentable {
+    case ejJ4yPfAJIjDyKgV7P1ZWkRG2Tos0krQ, CJCiMMBeznvfU1AlZM38n8La2lKxSkZR, DKsAgA6kRNXlim48QpTZco3yYHYwzXoE, Fj0zfxn4cXHklIdYPX8zZrYG13psz6WT
+    public var wSx8YDhs5nITQ2fafyrzn7TBSqU9LpRW: Swift.Int {
+      get
+    }
+    public var ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int {
+      get
+    }
+    public typealias RawValue = Swift.Int
+    public var rawValue: TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy.RawValue {
+      get
+    }
+    public init?(rawValue: TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy.RawValue)
+  }
+  public init(variant: TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy)
+  final public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb(for bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  @objc deinit
+}
+extension TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh : TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+  final public func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+}
+@_hasMissingDesignatedInitializers final public class mPx7bhRisnh88rScqWHwDi7LJd8AdvuO {
+  @objc deinit
+}
+extension TesseractSDK.mPx7bhRisnh88rScqWHwDi7LJd8AdvuO {
+  public static func eRBesasvsKOQyEgmwcC0V0QS71WhB8Ff(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32
+  public static func vgepRna0yRduyAk09UyEMkxzQGNBBqaO(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32
+  public static func hpo7koNsjsmJVya73rOYDrrk9MO4ojfU(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt16? = nil) -> Swift.UInt16
+}
+@_specialize(exported: false, kind: full, where T == Swift.Int)
+@_specialize(exported: false, kind: full, where T == Swift.UInt)
+@_specialize(exported: false, kind: full, where T == Swift.UInt8)
+@_specialize(exported: false, kind: full, where T == Swift.UInt16)
+@_specialize(exported: false, kind: full, where T == Swift.UInt32)
+@_specialize(exported: false, kind: full, where T == Swift.UInt64)
+@inlinable internal func xYNqNS2UZm57cpvYTyySAmhxH1c8SNae<T>(value: T, length totalBytes: Swift.Int = MemoryLayout<T>.size) -> Swift.Array<Swift.UInt8> where T : Swift.FixedWidthInteger {
+  let valuePointer = UnsafeMutablePointer<T>.allocate(capacity: 1)
+  valuePointer.pointee = value
+
+  let bytesPointer = UnsafeMutablePointer<UInt8>(OpaquePointer(valuePointer))
+  var bytes = Array<UInt8>(repeating: 0, count: totalBytes)
+  for j in 0..<min(MemoryLayout<T>.size, totalBytes) {
+    bytes[totalBytes - 1 - j] = (bytesPointer + j).pointee
+  }
+
+  valuePointer.deinitialize(count: 1)
+  valuePointer.deallocate()
+
+  return bytes
+}
+@_hasMissingDesignatedInitializers final public class x5oH5yd48HisVK2zqSKKRwR3q7fxXqDK : TesseractSDK.ICFv9Wcd9WnzbD2kPY025E9gU2lh5B9O {
+  public static let Ghh3EmA6FAI9pLTfBNAEEUIfJFthnU3w: Swift.Int
+  public static var Mcwj6icmumkJ6neBHF0xivIIBBA7w1gw: Swift.Range<Swift.Int>
+  public static func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(_ plainText: Swift.Array<Swift.UInt8>, key: Swift.Array<Swift.UInt8>, iv: Swift.Array<Swift.UInt8>, authenticationHeader: Swift.Array<Swift.UInt8>) throws -> (cipherText: Swift.Array<Swift.UInt8>, authenticationTag: Swift.Array<Swift.UInt8>)
+  public static func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(_ cipherText: Swift.Array<Swift.UInt8>, key: Swift.Array<Swift.UInt8>, iv: Swift.Array<Swift.UInt8>, authenticationHeader: Swift.Array<Swift.UInt8>, authenticationTag: Swift.Array<Swift.UInt8>) throws -> (plainText: Swift.Array<Swift.UInt8>, success: Swift.Bool)
+  @objc deinit
+}
+@objc(Result) public enum Result : Swift.Int {
+  case SDK_NOT_INIT
+  case SUCCESS
+  case TOKEN_ALREADY_EXISTS
+  case ERROR_SAVING_TOKEN
+  case TOKEN_NOT_FOUND
+  case INVALID_TOKEN_STATUS
+  case TOKEN_NOT_SELECTED
+  case INVALID_ENROLLMENT_STRING
+  case INVALID_ACT_CODE
+  case UNKNOWN_ERROR
+  case NOT_AUTH
+  case BAD_PIN
+  case ACTIVATION_ERROR
+  case INVALID_PARAMETER
+  case NO_INTERNET_ACCESS
+  case INVALID_TOKEN_IS_UNASSIGNED
+  case INVALID_TOKEN_IS_WAITING
+  case INVALID_TOKEN_IS_ASSIGNED
+  case INVALID_TOKEN_ALREADY_ACTIVATED
+  case INVALID_TOKEN_IS_REVOKED
+  case INVALID_TOKEN_IS_BLOCKED
+  case TOKEN_INFORMATION_CORRUPT
+  case NO_MATCH_BODY_TOKEN_SERIAL
+  case ACTIVATION_PROCESS
+  case SYNC_SUCCESS
+  case SYNC_FAILED
+  case UNNECESSARY_SYNC
+  case ERROR_DATE
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Foundation.Data {
+  public func hNYGzJcvEfYLbg1MhV5XYXI9HN8YMbDT() -> Swift.UInt16
+  public func jrghJWtJATAQCFHV1vRqPLDsXDO7yso5() -> Foundation.Data
+  public func DjRjx0kUCSuyiyuqmkskQPJWhQ4RIUsS() -> Foundation.Data
+  public func ejJ4yPfAJIjDyKgV7P1ZWkRG2Tos0krQ() -> Foundation.Data
+  public func CJCiMMBeznvfU1AlZM38n8La2lKxSkZR() -> Foundation.Data
+  public func DKsAgA6kRNXlim48QpTZco3yYHYwzXoE() -> Foundation.Data
+  public func Fj0zfxn4cXHklIdYPX8zZrYG13psz6WT() -> Foundation.Data
+  public func NdJ0LMw3I6fkx4nCdCnlwiLYSodJqyFc(_ variant: TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> Foundation.Data
+  public func eRBesasvsKOQyEgmwcC0V0QS71WhB8Ff(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Foundation.Data
+  public func vgepRna0yRduyAk09UyEMkxzQGNBBqaO(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Foundation.Data
+  public func hpo7koNsjsmJVya73rOYDrrk9MO4ojfU(seed: Swift.UInt16? = nil) -> Foundation.Data
+  public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> Foundation.Data
+  public func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> Foundation.Data
+  public func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ(with authenticator: TesseractSDK.BhKmsulF5YzCdB4Qzopmosb9gYLQnR6w) throws -> Foundation.Data
+}
+extension Foundation.Data {
+  public init(hex: Swift.String)
+  public var iZjR0HSTR7Iq2BySu0YFpocHkbQkMTfH: Swift.Array<Swift.UInt8> {
+    get
+  }
+  public func zYK52CHADZKIBeKNIWm4htrhIFFSxTRO() -> Swift.String
+}
+public protocol CBvbKiJVTD9hn23pLQguxKs9yQSmlASe : AnyObject {
+  func v9U5zudusyfy1Z1ql24JpHtyeTYTYo6l() throws -> TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g & TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D
+  func M9o1jXf82DaoGaJWAEoYKyIfxPq4UmPY() throws -> TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g & TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D
+  static func GNsqkTBXknQvVuo5aagDJxn4TV6Jqg0i(_ blockSize: Swift.Int) -> Swift.Array<Swift.UInt8>
+}
+extension TesseractSDK.CBvbKiJVTD9hn23pLQguxKs9yQSmlASe {
+  public static func GNsqkTBXknQvVuo5aagDJxn4TV6Jqg0i(_ count: Swift.Int) -> Swift.Array<Swift.UInt8>
+}
+extension Swift.String {
+  public var iZjR0HSTR7Iq2BySu0YFpocHkbQkMTfH: Swift.Array<Swift.UInt8> {
+    get
+  }
+  public func jrghJWtJATAQCFHV1vRqPLDsXDO7yso5() -> Swift.String
+  public func DjRjx0kUCSuyiyuqmkskQPJWhQ4RIUsS() -> Swift.String
+  public func ejJ4yPfAJIjDyKgV7P1ZWkRG2Tos0krQ() -> Swift.String
+  public func CJCiMMBeznvfU1AlZM38n8La2lKxSkZR() -> Swift.String
+  public func DKsAgA6kRNXlim48QpTZco3yYHYwzXoE() -> Swift.String
+  public func Fj0zfxn4cXHklIdYPX8zZrYG13psz6WT() -> Swift.String
+  public func NdJ0LMw3I6fkx4nCdCnlwiLYSodJqyFc(_ variant: TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> Swift.String
+  public func eRBesasvsKOQyEgmwcC0V0QS71WhB8Ff(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.String
+  public func vgepRna0yRduyAk09UyEMkxzQGNBBqaO(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.String
+  public func hpo7koNsjsmJVya73rOYDrrk9MO4ojfU(seed: Swift.UInt16? = nil) -> Swift.String
+  public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> Swift.String
+  public func op9krLxbnVRKYRaVmUCwBvXgcahGU1yZ(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> Swift.String?
+  public func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ<A>(with authenticator: A) throws -> Swift.String where A : TesseractSDK.BhKmsulF5YzCdB4Qzopmosb9gYLQnR6w
+}
+extension TesseractSDK.e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc {
+  convenience public init(key: Swift.String, iv: Swift.String, padding: TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39 = .FBTxkWkKznMjWompJTl1ZLL5IUw0go9u) throws
+}
+final public class lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE {
+  final public let ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int
+  final public let wSx8YDhs5nITQ2fafyrzn7TBSqU9LpRW: Swift.Int
+  final public let SQrklDdmOruUXZEVufYop4TWSG7qADPy: Swift.UInt8
+  public enum QMGPuzjswMeAUOiFcWNDnNbM4GodKldy {
+    case ejJ4yPfAJIjDyKgV7P1ZWkRG2Tos0krQ, CJCiMMBeznvfU1AlZM38n8La2lKxSkZR, DKsAgA6kRNXlim48QpTZco3yYHYwzXoE, Fj0zfxn4cXHklIdYPX8zZrYG13psz6WT, uiktCWacqPM3sZgMxsnXOVC6w6SGqJSv, AX2SqOwRjfvgYUI6JudRtZDTt60uKONE, bxGA2CMk9wwSRO9mDpfznc036pKEYrsJ, LztYwioyOx2dEzXvRtRUC06YnS7owXUM
+    public var qeNJV8vcR5Bpyg43kOrzbwj0SczSsGQm: Swift.Int {
+      get
+    }
+    public static func == (a: TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy, b: TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(variant: TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy)
+  final public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb(for bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  @objc deinit
+}
+extension TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE : TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+  final public func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth {
+  convenience public init(key: Swift.String, iv: Swift.String, padding: TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39 = .FBTxkWkKznMjWompJTl1ZLL5IUw0go9u) throws
+}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth : TesseractSDK.CBvbKiJVTD9hn23pLQguxKs9yQSmlASe {
+  final public func v9U5zudusyfy1Z1ql24JpHtyeTYTYo6l() throws -> TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g & TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D
+  final public func M9o1jXf82DaoGaJWAEoYKyIfxPq4UmPY() throws -> TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g & TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D
+}
+@_inheritsConvenienceInitializers @objc(TesseractSDK) open class TesseractSDK : ObjectiveC.NSObject {
+  @objc public static func createToken(name: Swift.String) -> TesseractSDK.Result
+  @objc public static func deleteToken(name: Swift.String) -> TesseractSDK.Result
+  @objc public static func existsToken(name: Swift.String) -> Swift.Bool
+  @objc public static func selectToken(name: Swift.String) -> TesseractSDK.Result
+  @objc public static func listTokens() -> [Swift.String]
+  @objc public static func enrollmentToken(enrollmentStringBase64: Swift.String, actCode: Swift.String) -> TesseractSDK.Result
+  @objc public static func activate(success: @escaping () -> Swift.Void, failed failure: @escaping (_ result: TesseractSDK.Result) -> Swift.Void)
+  @objc public static func setPin(pin: Swift.String) -> TesseractSDK.Result
+  @objc public static func auth(pin: Swift.String) -> TesseractSDK.Result
+  @objc public static func isAuth() -> Swift.Bool
+  @objc public static func changePin(oldPin: Swift.String, newPin: Swift.String) -> TesseractSDK.Result
+  @objc public static func synchronize() -> TesseractSDK.Result
+  @objc public static func generateOTP(challenge: Swift.String?) -> Swift.String?
+  @objc public static func getTokenName() -> Swift.String?
+  @objc public static func getStatus() -> TesseractSDK.TokenStatus
+  @objc public static func getType() -> TesseractSDK.KeyUsage
+  @objc public static func getSerial() -> Swift.String?
+  @objc public static func getExpiresAt() -> Foundation.Date?
+  @objc public static func getTimeInterval() -> Swift.Int64
+  @objc public static func getAttempts() -> Swift.Int
+  @objc public static func getMaxAttempts() -> Swift.Int
+  @objc public static func getTimeout() -> Swift.Int64
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum GsTogOJQ29Fc54LhDtljXqzlupebomy2 {
+}
+public protocol ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+  mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool) throws -> Swift.Array<Swift.UInt8>
+  mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool, output: (_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Void) throws
+}
+extension TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+  public mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false, output: (_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Void) throws
+  public mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+  public mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.Array<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+  public mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.Array<Swift.UInt8>, isLast: Swift.Bool = false, output: (_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Void) throws
+  public mutating func Duj0dYo1b2iEKQH2eRWcynpx7VAyVrn7(withBytes bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  public mutating func Duj0dYo1b2iEKQH2eRWcynpx7VAyVrn7(withBytes bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  public mutating func Duj0dYo1b2iEKQH2eRWcynpx7VAyVrn7() throws -> Swift.Array<Swift.UInt8>
+  public mutating func Duj0dYo1b2iEKQH2eRWcynpx7VAyVrn7(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, output: (_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Void) throws
+  public mutating func Duj0dYo1b2iEKQH2eRWcynpx7VAyVrn7(withBytes bytes: Swift.Array<Swift.UInt8>, output: (_ bytes: Swift.Array<Swift.UInt8>) -> Swift.Void) throws
+  public mutating func Duj0dYo1b2iEKQH2eRWcynpx7VAyVrn7(output: (Swift.Array<Swift.UInt8>) -> Swift.Void) throws
+}
+public enum CuQhRDF2KishFptZQqM3kiZQybPZYBLT : Swift.Error {
+  case aZnaM6Pkyq0uQFOTUoadGWoIXMA6BfdO
+  case DzaaxydWSqyvENk3iM3nXP8ZMPUzoe0S
+  case p4YNqPdwvpzKMcUe1oc3I2d43JxJKojd
+  public static func == (a: TesseractSDK.CuQhRDF2KishFptZQqM3kiZQybPZYBLT, b: TesseractSDK.CuQhRDF2KishFptZQqM3kiZQybPZYBLT) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public typealias ArrayLiteralElement = TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public typealias Element = TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public typealias RawValue = Swift.Int
+}
+extension TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4 {
+  convenience public init(key: Swift.String, variant: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy = .jrghJWtJATAQCFHV1vRqPLDsXDO7yso5) throws
+}
+public struct y1m5UHXQelZQgFZn8HbuRTgHZwJ6Juou {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case Ry967RjPvpRxEU5UX2wnFnaI63bUoOG1
+    case LkBDua57c6OwWMFrlHyvBBcDqCPGHDV8
+    public static func == (a: TesseractSDK.y1m5UHXQelZQgFZn8HbuRTgHZwJ6Juou.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.y1m5UHXQelZQgFZn8HbuRTgHZwJ6Juou.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(password: Swift.Array<Swift.UInt8>, salt: Swift.Array<Swift.UInt8>? = nil, info: Swift.Array<Swift.UInt8>? = nil, keyLength: Swift.Int? = nil, variant: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy = .CJCiMMBeznvfU1AlZM38n8La2lKxSkZR) throws
+  public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb() throws -> Swift.Array<Swift.UInt8>
+}
+public struct GDFtR9TIDm0N1XAF1DaMwtcAzrL2rKJc : Swift.Error {
+}
+extension TesseractSDK.GDFtR9TIDm0N1XAF1DaMwtcAzrL2rKJc : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol AVMskJgUwxsP7sUqjeognrT3FNeW4I9g {
+  mutating func NOBZHbpWCVpRqJCos6xxR7nlRLrCRJE3(to: Swift.Int) throws
+}
+public protocol BhKmsulF5YzCdB4Qzopmosb9gYLQnR6w {
+  func JnD9Lz4ezb7gwwgDnswoHLDaSUXmUGXJ(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+}
+public struct SGHTGIu5GSY428rxS0h6fmmukvRWnjmP : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    public static func == (a: TesseractSDK.SGHTGIu5GSY428rxS0h6fmmukvRWnjmP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.SGHTGIu5GSY428rxS0h6fmmukvRWnjmP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public init(iv: Swift.Array<Swift.UInt8>)
+  public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var hOIbwwM4PmWEyRlZrneL8vB48r8StXtU: Swift.String {
+    get
+  }
+}
+extension Swift.String : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+infix operator >>> : BitwiseShiftPrecedence
+final public class UWBnboaKfVZUO3oXnImDr1q48RoFET6m : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {
+  public enum IBFvQEICgUjykb5jk2nFuPkB9aVuT3Bj {
+    case tcAuA0LBRJa4eWjtvV4ETbGhiAJZKXUA
+    case ECJyyLE6CDTfCW9K2cfBjk6PxOe3hZUu
+    public static func == (a: TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.IBFvQEICgUjykb5jk2nFuPkB9aVuT3Bj, b: TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.IBFvQEICgUjykb5jk2nFuPkB9aVuT3Bj) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case CaUdAimHUt4ROlmyNgOjnGfoZO1Svmej
+    case HelFL5fk3Nf8gwfFXd1XC1iPtyHivzyR
+    public static func == (a: TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public var YBI6OzVlN12uOwKp3XMFKsb2nxpcKloG: Swift.Array<Swift.UInt8>?
+  public init(iv: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, tagLength: Swift.Int = 16, mode: TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.IBFvQEICgUjykb5jk2nFuPkB9aVuT3Bj = .ECJyyLE6CDTfCW9K2cfBjk6PxOe3hZUu)
+  convenience public init(iv: Swift.Array<Swift.UInt8>, authenticationTag: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, mode: TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.IBFvQEICgUjykb5jk2nFuPkB9aVuT3Bj = .ECJyyLE6CDTfCW9K2cfBjk6PxOe3hZUu)
+  final public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+  @objc deinit
+}
+@objc(TokenStatus) public enum TokenStatus : Swift.Int {
+  case UNKNOWN
+  case CREATED
+  case ENROLLMENT
+  case WAITING_PIN
+  case READY
+  case BLOCKED
+  public static func rawValue(value: Swift.String) -> TesseractSDK.TokenStatus
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol bgFVkjQXcwhjfmh5YqPGSeOKiwwfmv4M {
+  func HvoN4WOAU9nNJ0VOD8SKubgwMwObgnLC(to: Swift.Array<Swift.UInt8>, blockSize: Swift.Int) -> Swift.Array<Swift.UInt8>
+  func H0WiiDdutVCeG6hAOjc39WSw212lGAXY(from: Swift.Array<Swift.UInt8>, blockSize: Swift.Int?) -> Swift.Array<Swift.UInt8>
+}
+public enum MIhvLW1ycosA2hikVv7LBqknijQACY39 : TesseractSDK.bgFVkjQXcwhjfmh5YqPGSeOKiwwfmv4M {
+  case osb6bbCk8WafeYK6l7wiZlCx8Dh9pfDk, vzyPjjGHXFlRiEbPogSOLBA3Px3ZulDI, FBTxkWkKznMjWompJTl1ZLL5IUw0go9u, uUDmHIaziJhoeJJ9iqw2lzKyvbY0hBzc
+  public func HvoN4WOAU9nNJ0VOD8SKubgwMwObgnLC(to: Swift.Array<Swift.UInt8>, blockSize: Swift.Int) -> Swift.Array<Swift.UInt8>
+  public func H0WiiDdutVCeG6hAOjc39WSw212lGAXY(from: Swift.Array<Swift.UInt8>, blockSize: Swift.Int?) -> Swift.Array<Swift.UInt8>
+  public static func == (a: TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39, b: TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class NKRkndJl7PYfnirEA3l9Ma7PcSyYTWeO {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case vXKeTajWjQwg2p6CxP97zWR4GqfdVZXN
+    public static func == (a: TesseractSDK.NKRkndJl7PYfnirEA3l9Ma7PcSyYTWeO.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.NKRkndJl7PYfnirEA3l9Ma7PcSyYTWeO.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static let IoCXNKlcGaVBwWtL5DCMUudZcrhLA4ZN: Swift.Int
+  public static let jqt7yYAXe4dP0sYJ72lxLaWs6UBKWVnN: Swift.Int
+  public static let ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int
+  final public var jqt7yYAXe4dP0sYJ72lxLaWs6UBKWVnN: Swift.Int {
+    get
+  }
+  convenience public init(key: Swift.Array<Swift.UInt8>) throws
+  public init(key: Swift.Array<Swift.UInt8>, iv: Swift.Array<Swift.UInt8>?) throws
+  @objc deinit
+}
+extension TesseractSDK.NKRkndJl7PYfnirEA3l9Ma7PcSyYTWeO : TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S {
+  final public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  final public func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+}
+public typealias CipherOperationOnBlock = (_ block: Swift.ArraySlice<Swift.UInt8>) -> Swift.Array<Swift.UInt8>?
+public protocol zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {
+  var igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK { get }
+  func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+extension Swift.UInt32 {
+  @_specialize(exported: false, kind: full, where T == Swift.ArraySlice<Swift.UInt8>)
+  @inlinable internal init<T>(bytes: T, fromIndex index: T.Index) where T : Swift.Collection, T.Element == Swift.UInt8, T.Index == Swift.Int {
+    if bytes.isEmpty {
+      self = 0
+      return
+    }
+
+    let count = bytes.count
+
+    let val0 = count > 0 ? UInt32(bytes[index.advanced(by: 0)]) << 24 : 0
+    let val1 = count > 1 ? UInt32(bytes[index.advanced(by: 1)]) << 16 : 0
+    let val2 = count > 2 ? UInt32(bytes[index.advanced(by: 2)]) << 8 : 0
+    let val3 = count > 3 ? UInt32(bytes[index.advanced(by: 3)]) : 0
+
+    self = val0 | val1 | val2 | val3
+  }
+}
+final public class LGFZZ6sIr0hrJtM8PeRaG8gAuzWjJIMo {
+  public init()
+  final public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb(for bytes: Swift.Array<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  @objc deinit
+}
+extension TesseractSDK.LGFZZ6sIr0hrJtM8PeRaG8gAuzWjJIMo : TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+  @discardableResult
+  final public func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+}
+final public class OaSZlFs8NjvpYJnoVyW3czg65uvq351t {
+  public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+    case vXKeTajWjQwg2p6CxP97zWR4GqfdVZXN
+    case QA1Hb0Nsj2aVmUDw1ZZNNPNhUWXtclj5
+    public static func == (a: TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static let ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int
+  final public let jqt7yYAXe4dP0sYJ72lxLaWs6UBKWVnN: Swift.Int
+  public init(key: Swift.Array<Swift.UInt8>, iv nonce: Swift.Array<Swift.UInt8>) throws
+  @objc deinit
+}
+extension TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t : TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S {
+  final public func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+  final public func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(_ bytes: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
+}
+extension TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t {
+  public struct ZZn3n9A3mMHV492kZ4GTnHj92vz8IDNk : TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g, TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+    public mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+    public func NOBZHbpWCVpRqJCos6xxR7nlRLrCRJE3(to: Swift.Int) throws
+  }
+}
+extension TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t {
+  public struct AEClaox6mcpeAEkNFZvnmJCyIIGZ2Pui : TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g, TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+    public mutating func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = true) throws -> Swift.Array<Swift.UInt8>
+    public func NOBZHbpWCVpRqJCos6xxR7nlRLrCRJE3(to: Swift.Int) throws
+  }
+}
+extension TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t : TesseractSDK.CBvbKiJVTD9hn23pLQguxKs9yQSmlASe {
+  final public func v9U5zudusyfy1Z1ql24JpHtyeTYTYo6l() -> TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g & TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D
+  final public func M9o1jXf82DaoGaJWAEoYKyIfxPq4UmPY() -> TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g & TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D
+}
+public struct oyUZUuUCTAgT6yHPsRRAGMrlrkSs6UOr : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {
+  public let igXXkSEUeZtRFK9wCjgSDKPTcNk7Rbn7: TesseractSDK.RJln9IF5mbxiJImhgdOrMJ5gUS9iIrdK
+  public init()
+  public func SVMHWH2e5nnmsprAgWkF9abLP6ZaQZnG(blockSize: Swift.Int, cipherOperation: @escaping TesseractSDK.CipherOperationOnBlock) throws -> TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl
+}
+public protocol pBgyxr1vSuEVvhBwA7qlpl3KtdrRbCq6 {
+}
+extension Swift.UInt8 : TesseractSDK.pBgyxr1vSuEVvhBwA7qlpl3KtdrRbCq6 {
+}
+extension Swift.UInt8 {
+  public func wPgvxsTd6E9zQsITtC1JYPtIXRO74Llx() -> [TesseractSDK.hsQuY1qdFKhfovtz8EZqJooL6zv6VrS3]
+  public func wPgvxsTd6E9zQsITtC1JYPtIXRO74Llx() -> Swift.String
+}
+extension Swift.UInt64 {
+  @_specialize(exported: false, kind: full, where T == Swift.ArraySlice<Swift.UInt8>)
+  @inlinable internal init<T>(bytes: T, fromIndex index: T.Index) where T : Swift.Collection, T.Element == Swift.UInt8, T.Index == Swift.Int {
+    if bytes.isEmpty {
+      self = 0
+      return
+    }
+
+    let count = bytes.count
+
+    let val0 = count > 0 ? UInt64(bytes[index.advanced(by: 0)]) << 56 : 0
+    let val1 = count > 1 ? UInt64(bytes[index.advanced(by: 1)]) << 48 : 0
+    let val2 = count > 2 ? UInt64(bytes[index.advanced(by: 2)]) << 40 : 0
+    let val3 = count > 3 ? UInt64(bytes[index.advanced(by: 3)]) << 32 : 0
+    let val4 = count > 4 ? UInt64(bytes[index.advanced(by: 4)]) << 24 : 0
+    let val5 = count > 5 ? UInt64(bytes[index.advanced(by: 5)]) << 16 : 0
+    let val6 = count > 6 ? UInt64(bytes[index.advanced(by: 6)]) << 8 : 0
+    let val7 = count > 7 ? UInt64(bytes[index.advanced(by: 7)]) : 0
+
+    self = val0 | val1 | val2 | val3 | val4 | val5 | val6 | val7
+  }
+}
+@_hasMissingDesignatedInitializers public class m3hfTCaGX22MAnPi98n80aIHRI7sCJHP : TesseractSDK.AVMskJgUwxsP7sUqjeognrT3FNeW4I9g, TesseractSDK.ToKTw9nqPeNWXxpLT0ppfgHcwB9kef2D {
+  public func vRPnavrzU1pCgRf4QSDFsZubhnoncfZt(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
+  public func NOBZHbpWCVpRqJCos6xxR7nlRLrCRJE3(to position: Swift.Int) throws
+  @objc deinit
+}
+extension TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t {
+  convenience public init(key: Swift.String, iv: Swift.String) throws
+}
+public enum hsQuY1qdFKhfovtz8EZqJooL6zv6VrS3 : Swift.Int {
+  case zero
+  case one
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DnNfHFsbXcccelZjsB1gOBERyxQbJbbC {
+  public struct dLkaajm7jB3RRAhoBiSqLSHoFstLqF2v {
+    public var NkM4Hf0wKJBCu3xlOsz51xiVULDG4Qah: Swift.Double
+    public var dCHoz7yWbJvuM0qVXlqeFK7kDWMgHsto: Swift.String
+    public var e1xZYKgNPVpgXxr4zxPqgT7VHoJGPsuL: Swift.String
+    public var IG45PoVMoejF2tTVl1VMuz5hFFV6S2kJ: Swift.String {
+      get
+    }
+  }
+  public struct NvS9nGvdB6MHcP7IFQ5vo4uNtrOqX55t {
+    public var O8iSsaTr7judd4vW41Etn84rVQSJPkkV: Swift.Bool
+    public var IKfOYfnFODHdJjkd97oTE9joT2ImrgRx: Swift.Bool
+    public var SOm0JJ436ZJs0RKZgtgBf9D2t6W4oi6W: Swift.Bool
+    public var lHP1MKF73ivpvqor3MqJ7IiRc5dRzUa3: Swift.Bool
+  }
+  public var u2wxQJdNlKAWNMSYzPFPkm97qxC85b5V: TesseractSDK.DnNfHFsbXcccelZjsB1gOBERyxQbJbbC.dLkaajm7jB3RRAhoBiSqLSHoFstLqF2v
+  public var zAnBEnz62uHVzC33CN3TUNrafn6OLAeX: TesseractSDK.DnNfHFsbXcccelZjsB1gOBERyxQbJbbC.NvS9nGvdB6MHcP7IFQ5vo4uNtrOqX55t
+  public init()
+}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD {
+  public struct zazkp9QnqOJxfMKsJODnsSSSbRwhsR1O {
+    public enum QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Error {
+      case Ry967RjPvpRxEU5UX2wnFnaI63bUoOG1
+      case LkBDua57c6OwWMFrlHyvBBcDqCPGHDV8
+      public static func == (a: TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.zazkp9QnqOJxfMKsJODnsSSSbRwhsR1O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK, b: TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.zazkp9QnqOJxfMKsJODnsSSSbRwhsR1O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public init(password: Swift.Array<Swift.UInt8>, salt: Swift.Array<Swift.UInt8>, iterations: Swift.Int = 4096, keyLength: Swift.Int? = nil, variant: TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy = .CJCiMMBeznvfU1AlZM38n8La2lKxSkZR) throws
+    public func uVpWUOwpsYu8ZbJbqEQaJ1SDLQM1jByb() throws -> Swift.Array<Swift.UInt8>
+  }
+}
+@objc(KeyUsage) public enum KeyUsage : Swift.Int {
+  case OTP
+  case CR
+  case ENCRYPT
+  case INTEGRITY
+  case VERIFY
+  case UNLOCK
+  case DECRYPT
+  case KEYWRAP
+  case UNWRAP
+  case DERIVE
+  case GENERATE
+  case UNKNOWN
+  public static func rawValue(value: Swift.String) -> TesseractSDK.KeyUsage
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Swift.String {
+  public func ytly2Zp0VDPJcHrmDnYDxEJbQPFqQxuw(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> Swift.String
+  public func uu3d8KY7ihGwyR2WLvj5RA1jaYkhu9n8(cipher: TesseractSDK.KZ0FlDMHxdoOFMy9wrfmxMzifQFVAr1S) throws -> Swift.Array<Swift.UInt8>
+}
+public protocol pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl {
+  var A8vLrXBrujcTlj74kVt69MrtdUvoTENY: TesseractSDK.CipherOperationOnBlock { get }
+  var JGZTdu2EXAGDpx8ogSY1iyA4C3uSYWA1: Swift.Int { get }
+  mutating func Zmc5KatUHMcJlWKJtrvPdO1WcvX9zCWh(block plaintext: Swift.ArraySlice<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+  mutating func suBBnPSqIcbiechDeB6TXfRrxqvuXMzB(block ciphertext: Swift.ArraySlice<Swift.UInt8>) -> Swift.Array<Swift.UInt8>
+}
+public protocol gBm6rXzLjIDHCmAqIIAp6dl5e0zgmtnL : TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl {
+  var ipCfhyKMj3cyYcKJBKFlzVJhyTUj58Pv: Swift.Int { get }
+}
+public protocol xETxpMW0iVndfxMOwMn0XephXIqsN1Kt : TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl {
+  associatedtype Counter
+  var sXQLI2gmQLeW2pmF9HqnZj9H6sltVQ0K: Self.Counter { get set }
+}
+public protocol vl37UPedy5EIt2vk8I7hf6kFIvdfxUs2 : TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl {
+  mutating func NOBZHbpWCVpRqJCos6xxR7nlRLrCRJE3(to position: Swift.Int) throws
+}
+public protocol R5hUh1niY6bsU5dzPCewB4MyZO27s5mc : TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl {
+}
+public protocol tIGjBAEVYoYungX7hdf5YUUhDlcSWVvV : TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl {
+  mutating func LjArsilYtrFNMWMfP2ZKctC8i0qlADDn(encrypt ciphertext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
+}
+public protocol HfdUqM4kPFMBdZkoJtHVaZWaIwf46Ggs : TesseractSDK.pT3YVKPK4t6AhQTTbVOMTFyrqBcxNcCl {
+  @discardableResult
+  mutating func MIbSbTF1g3zRhCreOJHtvxrB29h12l8s(bytes ciphertext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
+  mutating func Uij3lfl7o7JmyBBSQjhtuFs3UKSRP41E(bytes plaintext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
+  mutating func LjArsilYtrFNMWMfP2ZKctC8i0qlADDn(decrypt plaintext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
+}
+open class WgGsDtJNtysERnB3RYOemBJBqrdTwSMV {
+  weak open var viuG44JVLjJjjgBNdKlh44XHpnZ9EZW2: TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV? {
+    get
+  }
+  open var nOus3W9whMJf1kVfreTRDQGnkN2NFTtt: [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV] {
+    get
+  }
+  open var sycGoEkNHKpZOR5PMv2lJZUcnUxFzhwY: Swift.String
+  open var value: Swift.String?
+  open var AOMobpAQy2RP6hEuobOHn52M4jnXjMz0: [Swift.String : Swift.String]
+  open var GAj6vQPCkuaQbFLu2ZJsBaQuVLGeQucF: TesseractSDK.CuQhRDF2KishFptZQqM3kiZQybPZYBLT?
+  open var SW5sMizX2T2gC2PljQbayW4J3IrfDrJy: Swift.String {
+    get
+  }
+  open var mVcMVTF5DsuNOsqwRFumVkP2yqrz6Af0: Swift.Bool? {
+    get
+  }
+  open var bLDVjkONx8vYMbzWcRcg9Knpm8vZDkmD: Swift.Int? {
+    get
+  }
+  open var Rg25a5qFz82F21g91p9N6ye5f3FWxk1x: Swift.Double? {
+    get
+  }
+  public init(name: Swift.String, value: Swift.String? = nil, attributes: [Swift.String : Swift.String] = [:])
+  open subscript(key: Swift.String) -> TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV {
+    get
+  }
+  open var WWKfmjJBlm8HWuNcPy2N8Dk5DL2NW9Zg: [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV]? {
+    get
+  }
+  open var xoalN9xvbDhNPGN4KJMUXDBJld71q2HO: TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV? {
+    get
+  }
+  open var xLw2EWyEofSCkb3Xs7BYf3dhLJfB0WQ2: TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV? {
+    get
+  }
+  open var xAyHnFgp7MJpbWJUUdfpI9uzTTO27NCw: Swift.Int {
+    get
+  }
+  open func WWKfmjJBlm8HWuNcPy2N8Dk5DL2NW9Zg(withValue value: Swift.String) -> [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV]?
+  open func WWKfmjJBlm8HWuNcPy2N8Dk5DL2NW9Zg(containingAttributeKeys keys: [Swift.String]) -> [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV]?
+  open func WWKfmjJBlm8HWuNcPy2N8Dk5DL2NW9Zg(withAttributes attributes: [Swift.String : Swift.String]) -> [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV]?
+  open func cCOwcbmiaLwWbhmvhnAVj05rBHeT8HZ0(where predicate: (TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV) -> Swift.Bool) -> [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV]
+  open func DbZ2iQUtWHlyvqrFx5v5RQmw7u6k0S9Y(where predicate: (TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV) -> Swift.Bool) -> TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV?
+  open func SOeI1Un1hweS6vfmfe3on4g8TBHugnQY(where predicate: (TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV) -> Swift.Bool) -> Swift.Bool
+  @discardableResult
+  open func s55m1LaVlhteq65t991ijmMXcVqgt1PW(_ child: TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV) -> TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV
+  @discardableResult
+  open func s55m1LaVlhteq65t991ijmMXcVqgt1PW(name: Swift.String, value: Swift.String? = nil, attributes: [Swift.String : Swift.String] = [:]) -> TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV
+  @discardableResult
+  open func uOXheMNrHwuUOY5pwtmzvKHiV5iPTObE(_ children: [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV]) -> [TesseractSDK.WgGsDtJNtysERnB3RYOemBJBqrdTwSMV]
+  open func if6u6KgJ4w7kM6KMXJxMApRDUAirUfYV()
+  open var rXSiLXtWNJJxFDRalwTJBscHOpCmc4JA: Swift.String {
+    get
+  }
+  open var vjFoDKMJynzFaWtCcZ4WXMrjoeklkyGy: Swift.String {
+    get
+  }
+  open var k2yOd8FMf3PxSGdq3AWUXK7MAaQ1AIBX: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension Swift.String {
+  public var Q4cBqy7LJdYQBfJobudFqdcYs3IEPcGB: Swift.String {
+    get
+  }
+}
+extension TesseractSDK.fkwiqyYiUpXw3ILmrhAe8b8CoAzxyCMP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.fkwiqyYiUpXw3ILmrhAe8b8CoAzxyCMP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.UEJjw5d29hvjH8AyLQH5ifeNkHnC9UCs : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {}
+extension TesseractSDK.UEJjw5d29hvjH8AyLQH5ifeNkHnC9UCs.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.UEJjw5d29hvjH8AyLQH5ifeNkHnC9UCs.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.amMKsUVBzW7rtQ3ukm65QQ4orcprJkUA : TesseractSDK.zTefpwx4oPh97rB0znoIpzY2RAXoJmTi {}
+extension TesseractSDK.amMKsUVBzW7rtQ3ukm65QQ4orcprJkUA.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.amMKsUVBzW7rtQ3ukm65QQ4orcprJkUA.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.IZU03N5nWdDkQk3Y5HiyaXI67NbGrL2Q.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.IZU03N5nWdDkQk3Y5HiyaXI67NbGrL2Q.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Equatable {}
+extension TesseractSDK.nH4ZUOAeZwriht8asIBiNzafg50a0sp4.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Hashable {}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Equatable {}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.aetAxU4SFgsoOyImYeP1TtPYWk2HB7VI.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Hashable {}
+extension TesseractSDK.GvngZ2sobGEjwYPVqcjLNu6z6tLL095s : Swift.Equatable {}
+extension TesseractSDK.GvngZ2sobGEjwYPVqcjLNu6z6tLL095s : Swift.Hashable {}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Equatable {}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Hashable {}
+extension TesseractSDK.Mpc7XvbQoCUndv7pEnxO3Hm8rgRlVHth.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.RawRepresentable {}
+extension TesseractSDK.e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.e1i9L2Sn0PySvzbLhRNF3zWukqvpEyZc.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.y5pUNhF5yR0DpvXf5IpqN8tQe3pviUFw.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.y5pUNhF5yR0DpvXf5IpqN8tQe3pviUFw.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.VSGbSiw9GmEZGpXtzbNqWEKynpdqHRzK.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.VSGbSiw9GmEZGpXtzbNqWEKynpdqHRzK.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.yUyFhzP7XK7gTLNRQ1FPpwDwTQRysj8O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.yUyFhzP7XK7gTLNRQ1FPpwDwTQRysj8O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Equatable {}
+extension TesseractSDK.xt07Q8QDxU3aYsoIKhOMnmVol4tHuDbh.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Hashable {}
+extension TesseractSDK.Result : Swift.Equatable {}
+extension TesseractSDK.Result : Swift.Hashable {}
+extension TesseractSDK.Result : Swift.RawRepresentable {}
+extension TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Equatable {}
+extension TesseractSDK.lxhUvGv4SvFzU0ua4mPdnz3GWxr0vEWE.QMGPuzjswMeAUOiFcWNDnNbM4GodKldy : Swift.Hashable {}
+extension TesseractSDK.CuQhRDF2KishFptZQqM3kiZQybPZYBLT : Swift.Equatable {}
+extension TesseractSDK.CuQhRDF2KishFptZQqM3kiZQybPZYBLT : Swift.Hashable {}
+extension TesseractSDK.y1m5UHXQelZQgFZn8HbuRTgHZwJ6Juou.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.y1m5UHXQelZQgFZn8HbuRTgHZwJ6Juou.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.SGHTGIu5GSY428rxS0h6fmmukvRWnjmP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.SGHTGIu5GSY428rxS0h6fmmukvRWnjmP.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.IBFvQEICgUjykb5jk2nFuPkB9aVuT3Bj : Swift.Equatable {}
+extension TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.IBFvQEICgUjykb5jk2nFuPkB9aVuT3Bj : Swift.Hashable {}
+extension TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.UWBnboaKfVZUO3oXnImDr1q48RoFET6m.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.TokenStatus : Swift.Equatable {}
+extension TesseractSDK.TokenStatus : Swift.Hashable {}
+extension TesseractSDK.TokenStatus : Swift.RawRepresentable {}
+extension TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39 : Swift.Equatable {}
+extension TesseractSDK.MIhvLW1ycosA2hikVv7LBqknijQACY39 : Swift.Hashable {}
+extension TesseractSDK.NKRkndJl7PYfnirEA3l9Ma7PcSyYTWeO.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.NKRkndJl7PYfnirEA3l9Ma7PcSyYTWeO.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.OaSZlFs8NjvpYJnoVyW3czg65uvq351t.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.hsQuY1qdFKhfovtz8EZqJooL6zv6VrS3 : Swift.Equatable {}
+extension TesseractSDK.hsQuY1qdFKhfovtz8EZqJooL6zv6VrS3 : Swift.Hashable {}
+extension TesseractSDK.hsQuY1qdFKhfovtz8EZqJooL6zv6VrS3 : Swift.RawRepresentable {}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.zazkp9QnqOJxfMKsJODnsSSSbRwhsR1O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Equatable {}
+extension TesseractSDK.ok0dAyzlwjy7ESBe5mIFAIrGkmyauqTD.zazkp9QnqOJxfMKsJODnsSSSbRwhsR1O.QCmlJqSIm6dXAGmTIBcGz6s5lWdhxBYK : Swift.Hashable {}
+extension TesseractSDK.KeyUsage : Swift.Equatable {}
+extension TesseractSDK.KeyUsage : Swift.Hashable {}
+extension TesseractSDK.KeyUsage : Swift.RawRepresentable {}

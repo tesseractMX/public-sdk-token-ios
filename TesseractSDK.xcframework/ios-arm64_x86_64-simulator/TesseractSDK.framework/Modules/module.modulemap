@@ -1,0 +1,11 @@
+framework module TesseractSDK {
+  umbrella header "TesseractSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module TesseractSDK.Swift {
+    header "TesseractSDK-Swift.h"
+    requires objc
+}
